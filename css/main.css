@@ -106,7 +106,7 @@ footer {
 
 
 /********
-PAGE: PORTFOLIO
+PAGE: EXAMPLES
 ********/
 
 #gallery {
@@ -185,18 +185,19 @@ COLORS
 /* site body */
 body {
  background-color:#fff;
-  color:#999;  
+ background-image: url(../img/flowers.jpg);
+  color:#fff;  
 }
 
-/* green header */
+/* purple header */
 header {
- background:#6ab47b;
-  border-color:#599a68;
+ background:#d507ce;
+  border-color:#470532;
 }
 
 /* nav background on mobile */
 nav {
- background:#599a68; 
+ background:#d507ce; 
 }
 
 /* logo text */
@@ -206,7 +207,7 @@ h1, h2 {
 
 /* links */
 a {
-  color:#6ab47b;
+  color:#C40399;
 }
 
 /* nav link */
@@ -216,7 +217,7 @@ nav a, nav a:visited {
 
 /* selected nav link */
 nav a.selected, nav a:hover {
- color: #32673f; 
+ color: #470532; 
 }
 
 
