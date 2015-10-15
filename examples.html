@@ -8,6 +8,18 @@
     <link href='https://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <style>
+
+            /* This rule is read by Galleria to define the gallery height: */
+            #galleria{height:640px}
+
+        </style>
+
+        <!-- load jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+        <!-- load Galleria -->
+        <script src="js/galleria-1.4.2.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
@@ -27,50 +39,72 @@
     </header>
     <div id="wrapper">
       <section>
-        <ul id="gallery">
-          <li>
-            <a href="img/fall1.jpg">
-              <img src="img/fall1.jpg" alt="">
-              <p>Fall wreath</p>
+        <div id="galleria">
+          <a href="img/fall1.jpg">
+              <img 
+              	src="img/fall1.jpg"
+                alt=""
+              	data-title="Fall wreath"
+               >
             </a>
-          </li>
-          <li>
+          
             <a href="img/fall2.jpg">
-              <img src="img/fall2.jpg" alt="">
-              <p>Another fall wreath</p>
+              <img
+               src="img/fall2.jpg" 
+               alt=""
+               data-title="Another fall wreath"
+             >
             </a>
-          </li>
-          <li>
+          
             <a href="img/breast_cancer.jpg">
-              <img src="img/breast_cancer.jpg" alt="">
-              <p>Breast Cancer awareness wreath</p>
+              <img 
+              	src="img/breast_cancer.jpg"
+              	alt=""
+              	data-title="Breast Cancer awareness wreath"
+               >
             </a>
-          </li>
-          <li>
+          
             <a href="img/green_glitter.jpg">
-              <img src="img/green_glitter.jpg" alt="">
-              <p>Wreath with glittery green flowers</p>
+              <img 
+              	src="img/green_glitter.jpg"
+                alt=""
+              	data-title="Wreath with glittery green flowers"
+               >
             </a>
-          </li>
-          <li>
+         
             <a href="img/housewarming.jpg">
-              <img src="img/housewarming.jpg" alt="">
-              <p>Housewarming wreath</p>
+              <img 
+              	src="img/housewarming.jpg"
+                alt=""
+              	data-title="Housewarming wreath"
+               >
             </a>
-          </li>
-          <li>
+          
             <a href="img/colorful.jpg">
-              <img src="img/colorful.jpg" alt="">
-              <p>Colorful wreath</p>
+              <img 
+              	src="img/colorful.jpg"
+                alt=""
+              	data-title="Colorful wreath"
+               >
             </a>
-          </li>        
-        </ul>
+                  
+        </div>
       </section>
-      <footer>
-        <a href="https://www.pinterest.com/alyanab15/"><img src="http://cdn-images.mailchimp.com/icons/social-block-v2/color-pinterest-48.png" alt="Pinterest Logo" class="social-icon"></a>
-        <a href="http://www.facebook.com/mwslater"><img src="http://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" alt="Facebook Logo" class="social-icon"></a>
+     </div>
+     <footer>
+       <a href="https://www.pinterest.com/alyanab15/"><img src="http://cdn-images.mailchimp.com/icons/social-block-v2/color-pinterest-48.png" alt="Pinterest Logo" class="social-icon"></a>
+       <a href="http://www.facebook.com/mwslater"><img src="http://cdn-images.mailchimp.com/icons/social-block-v2/color-facebook-48.png" alt="Facebook Logo" class="social-icon"></a>
         <p>&copy; 2015 Wreaths by Yana.</p>
-      </footer>
-    </div>
+     </footer>
+    
+    <script>
+
+    // Load the classic theme
+    Galleria.loadTheme('js/galleria.classic.js');
+
+    // Initialize Galleria
+    Galleria.run('#galleria');
+
+    </script>
   </body>  
 </html>
